@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40vw;
+  gap: 2vw;
+}
+
+.main_header {
+  font-size: 2.5vw;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.main_description {
+  font-size: 1.4vw;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.start_btn {
+  padding: 0.7vw 3vw;
+  background: transparent;
+  border-radius: 0.5vw;
+  border: 1px solid black;
+}
+
+.start_btn span {
+  font-size: 1.2vw;
+  font-weight: 400;
+  opacity: 0.9;
+}
