@@ -39,3 +39,26 @@
   font-weight: 400;
   opacity: 0.9;
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 90vw;
+    gap: 4vw;
+  }
+
+  .main_header {
+    font-size: 5.5vw;
+  }
+
+  .main_description {
+    font-size: 3.4vw;
+  }
+
+  .start_btn {
+    padding: 1.7vw 5vw;
+  }
+
+  .start_btn span {
+    font-size: 3.7vw;
+}
+}
