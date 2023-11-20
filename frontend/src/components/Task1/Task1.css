@@ -1,0 +1,35 @@
+.answear_block {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+.answear_input {
+    background: transparent;
+    border: 1px solid #666666;
+    padding: 7px;
+    border-radius: 4px;
+    width: 70%;
+}
+
+.answear_btn {
+    background: transparent;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 30%;
+}
+
+.answear_btn span {
+    font-size: 105%;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+@media (max-width: 500px) {
+    .tasks_header {
+        font-size: 5vw;
+        opacity: 0.8;
+    }
+}

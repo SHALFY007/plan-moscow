@@ -5,12 +5,21 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  gap: 14px;
+}
+
+.Main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40vw;
+  /* width: 40vw; */
   gap: 2vw;
 }
