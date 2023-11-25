@@ -27,9 +27,20 @@
     color: #1d1d1d;
 }
 
+.number {
+    position: absolute;
+    top: 0.5vw;
+    left: 0.5vw;
+    font-size: 1.5vw;
+}
+
 @media (max-width: 500px) {
     .tasks_header {
         font-size: 5vw;
         opacity: 0.8;
+    }
+
+    .number {
+        font-size: 4.5vw;
     }
 }

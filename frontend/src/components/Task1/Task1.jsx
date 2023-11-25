@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './Task1.css'
 
-function Task1() {
+function Task1(props) {
   const randint = (min, max) => Math.floor(min + Math.random() * (max - min + 1))
   const randEl = arr => arr[randint(0, arr.length - 1)]
 
@@ -124,30 +124,33 @@ function Task1() {
 
   return (
     <>
-        <p> В языке запросов поискового сервера для обозначения логической операции «ИЛИ» используется символ «|», а для обозначения логической операции «И» — символ «&».</p>
-    <p>В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.</p><br></br>
+      <span className="number">
+        {props.num}
+      </span>
+      <p> В языке запросов поискового сервера для обозначения логической операции «ИЛИ» используется символ «|», а для обозначения логической операции «И» — символ «&».</p>
+      <p>В таблице приведены запросы и количество найденных по ним страниц некоторого сегмента сети Интернет.</p><br></br>
       <table>
         {template}
 
-    <p>Сколько страниц будет найдено по запросу <span>{query}</span>?</p>
+        <p>Сколько страниц будет найдено по запросу <span>{query}</span>?</p>
 
-    {
-      (() => {
-        if (isAnsweared) {
-          return answeart == curAnswear ? <p>Верно</p> : <p>Не верно</p>
+        {
+          (() => {
+            if (isAnsweared) {
+              return answeart == curAnswear ? <p>Верно</p> : <p>Не верно</p>
+            }
+          })()
         }
-      })()
-    }
-    
-    {/* <p><span >Ответ:</span> <span>{answeart}</span></p> */}
+
+        {/* <p><span >Ответ:</span> <span>{answeart}</span></p> */}
 
       </table>
       <div className="answear_block">
-      <input type="text" className="answear_input" onChange={e => changeInp(e)}/>
-      <button className="answear_btn" onClick={e => checkAnswear(e)}>
-        <span>Проверить</span>
-      </button>
-    </div>
+        <input type="text" className="answear_input" onChange={e => changeInp(e)} />
+        <button className="answear_btn" onClick={e => checkAnswear(e)}>
+          <span>Проверить</span>
+        </button>
+      </div>
     </>
   )
 }
