@@ -23,6 +23,12 @@
   opacity: 0.9;
 }
 
+.main_input {
+  padding: 10px 15px;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+}
+
 @media (max-width: 500px) {
   .container {
     width: 90vw;
