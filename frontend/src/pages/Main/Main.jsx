@@ -1,7 +1,7 @@
 import './Main.css'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import { setCountFirst, setCountSecond } from '../../store/countSlice'
+import { setCountFirst, setCountSecond, setCountThird } from '../../store/countSlice'
 import { useState } from 'react'
 
 function Main() {
@@ -22,6 +22,9 @@ function Main() {
                 case 2:
                     dispatch(setCountSecond(value))
                     break;
+                case 3:
+                    dispatch(setCountThird(value))
+                    break;
 
                 default:
                     break;
@@ -37,6 +40,7 @@ function Main() {
                 <h3 className='main_description'>Тренажер , который поможет вам подготовиться к экзаменам и самостоятельным работам по информатике</h3>
                 <input className='main_input' type="text" placeholder='Тип 1' onChange={e => changeInp(e, 1)} />
                 <input className='main_input' type="text" placeholder='Тип 2' onChange={e => changeInp(e, 2)} />
+                <input className='main_input' type="text" placeholder='Тип 3' onChange={e => changeInp(e, 3)} />
                 <Link to={'/tasks'}>
                     <button className="start_btn">
                         <span>Начать</span>
